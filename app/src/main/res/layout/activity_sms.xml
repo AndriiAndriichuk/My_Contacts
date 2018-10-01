@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.andrii.contacts.SmsActivity"
+    android:id="@+id/rel_1">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/hint_s_name"
+        app:errorEnabled="true"
+        app:hintTextAppearance="@style/MyHintText"
+        android:layout_weight="2">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/sent_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Ім'я"
+            android:textColor="@color/text2"
+            android:theme="@style/MyEditText" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/hint_s_number"
+        app:errorEnabled="true"
+        app:hintTextAppearance="@style/MyHintText"
+        android:layout_weight="2">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/sent_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:hint="Номер"
+            android:textColor="@color/text2"
+            android:theme="@style/MyEditText" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/hint_s_text"
+        app:errorEnabled="true"
+        app:hintTextAppearance="@style/MyHintText"
+        android:layout_weight="1"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/sent_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Teкст"
+            android:textColor="@color/text2"
+            android:theme="@style/MyEditText" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:text="Відправити"
+        android:layout_weight="2.1"/>
+
+</LinearLayout>
